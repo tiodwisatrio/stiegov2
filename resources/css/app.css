@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom style colors */
+:root {
+    --color-primary: #b62127; /* Maroon */
+    --color-secondary: #006a4e; /* Dark Green */
+    --color-accent: #add8e6; /* Light Blue */
+    --color-background: #ffffff; /* Light Gray */
+    --color-text: #1e1e1e; /* Dark Gray */
+    --color-border: #e5e7eb; /* Gray */
+    --color-hover: #b8161b; /* Maroon */
+}
+/* Custom font family */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.bannerSwiper {
+    width: 100%;
+    /* Atur tinggi slider sesuai kebutuhan, misal 400px atau 50vh */
+    height: 500px;
+}
+
+.bannerSwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan gambar menutupi area tanpa distorsi */
+}
+
+/* Testimonial message responsive max-width */
+.testi_message {
+    max-width: 300px;
+}
+
+@media (min-width: 768px) {
+    .testi_message {
+        max-width: 400px;
+    }
+}
